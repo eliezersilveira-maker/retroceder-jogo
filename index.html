@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura em Texto - O Templo Perdido</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <header class="game-header">
+      <button id="btn-voltar" class="btn btn-secondary" onclick="voltarPasso()" disabled>
+        ⬅️ Voltar
+      </button>
+      <span id="passo-contador" class="badge">Passo: 0</span>
+    </header>
+
+    <main class="game-body">
+      <div id="cena-titulo" class="cena-titulo">Início da Jornada</div>
+      <p id="cena-texto" class="cena-texto">
+        Você está na entrada de uma floresta escura e antiga. Dois caminhos se abrem à sua frente.
+      </p>
+      
+      <div id="opcoes-container" class="opcoes-container">
+        </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

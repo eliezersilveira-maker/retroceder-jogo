@@ -1,0 +1,106 @@
+/* Configurações Globais e Tema RPG Escuro */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #e1e1e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container Principal do Jogo */
+.game-container {
+  background-color: #202024;
+  border: 2px solid #323238;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabeçalho */
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #323238;
+}
+
+.badge {
+  background-color: #29292e;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #8d8d99;
+}
+
+/* Corpo da Cena */
+.cena-titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00b37e;
+  margin-bottom: 12px;
+}
+
+.cena-texto {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #c4c4cc;
+  margin-bottom: 24px;
+  min-height: 80px;
+}
+
+/* Container dos Botões de Opção */
+.opcoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Estilização dos Botões */
+.btn {
+  background-color: #00875f;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #00b37e;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #29292e;
+  color: #e1e1e6;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #323238;
+}
+
+/* Estado Desativado (Disabled) */
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
